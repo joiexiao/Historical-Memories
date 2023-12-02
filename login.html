@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="img/Logo H&M.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="lrpopup">
+        <div class="lrpopupinner">
+          <div class="lrpopupcontent">
+            <a href="javascript:void();" class="close_lrpopup"
+              ><img class="image" src="img/clsbtn.svg" /><span
+                class="fa-solid fa-times"
+              ></span
+            ></a>
+
+            <div class="lrblockwrap">
+              <div class="loginblock lrblock">
+                <h3>Login</h3>
+                <p>Enter Your Login Details Below</p>
+                <div class="formwrap">
+                  <form method="post" action="#">
+                    <fieldset>
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <a href="#" class="fp">Forgot Password?</a>
+                    <button>
+                      Login <span class="fa-solid fa-angle-right"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!--loginblock-->
+
+              <div class="registerblock lrblock">
+                <h3>Register</h3>
+                <p>Enter Details Below for Sign Up</p>
+                <div class="formwrap">
+                  <form method="post" action="#">
+                    <fieldset>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name*"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address*"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder="Username*"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <fieldset>
+                      <input
+                        type="password"
+                        name="confirmpassword"
+                        placeholder="Confirm Password"
+                        autocomplete="off"
+                        required
+                      />
+                    </fieldset>
+                    <button>
+                      Sign Up <span class="fa-solid fa-angle-right"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!--Registerblock-->
+            </div>
+            <!--lrblockwrap-->
+          </div>
+          <!--lrblockwrap-->
+        </div>
+        <!--lrpopupinner-->
+      </div>
+      <!--lrpopup-->
+
+      <header>
+        <div
+          class="container"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <a href="index.html" class="logo"> Historical Memories. </a>
+          <div class="lrbuttons">
+            <a href="javascript:void();" class="login_btn active"> Login </a>
+            <a href="javascript:void();" class="register_btn"> Register </a>
+          </div>
+        </div>
+      </header>
+      <!--header-->
+      <div class="noclick">
+        <div class="content">
+          <div class="container">
+            <div class="timebox"></div>
+          </div>
+        </div>
+      </div>
+      <!--content-->
+
+      <footer>
+        <div class="container">
+          <div class="copyright">
+            Copyright &copy; <span id="year"></span>
+            <a href="index.html">Historical Memories.</a>
+          </div>
+        </div>
+      </footer>
+      <!--footer-->
+    </main>
+  </body>
+  <script src="script1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</html>

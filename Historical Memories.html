@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link rel="icon" href="img/Logo H&M.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="sabar.css" />
+  </head>
+  <body>
+    <div class="loader">Loading...</div>
+    <script>
+      // Periksa apakah flag loading sudah di-set di sessionStorage
+      if (!sessionStorage.getItem("loadingFlag")) {
+        // Set flag loading di sessionStorage
+        sessionStorage.setItem("loadingFlag", "true");
+
+        // Simulasikan penundaan 10 detik sebelum mengarahkan ke index.html
+        setTimeout(function () {
+          window.location.href = "index.html";
+        }, 5000); // Sesuaikan waktu penundaan menjadi 10 detik (10,000 milidetik)
+      } else {
+        // Periksa apakah kita sudah berada di halaman index
+        if (window.location.href.includes("index.html")) {
+          // Jika sudah berada di halaman index, tidak perlu diarahkan kembali
+          console.log("Sudah berada di halaman index");
+        } else {
+          // Arahkan ke index.html jika flag loading sudah di-set dan bukan di halaman index
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+  </body>
+</html>
